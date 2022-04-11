@@ -5926,6 +5926,14 @@ button.bg-dark:focus {
   border-color: #fff !important;
 }
 
+.checked {
+  color: white;
+}
+
+.royal {
+  color: royalblue;
+}
+
 .rounded-sm {
   border-radius: 0.2rem !important;
 }
@@ -8236,6 +8244,7 @@ button.bg-dark:focus {
   .p-md-3 {
     padding: 1rem !important;
   }
+
 
   .pt-md-3,
 .py-md-3 {
