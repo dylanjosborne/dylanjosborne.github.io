@@ -601,6 +601,10 @@ pre code {
   max-width: 100%;
 }
 
+.resume {
+  font-family: 'Public Sans', sans-serif;
+}
+
 .row-cols-1 > * {
   flex: 0 0 100%;
   max-width: 100%;
@@ -4437,6 +4441,8 @@ input[type=button].btn-block {
   font-size: 0.875rem;
   line-height: 1.5;
 }
+
+
 .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
