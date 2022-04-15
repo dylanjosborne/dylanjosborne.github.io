@@ -9786,7 +9786,10 @@ h3 {
     border-radius: 7px;
   }
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
+//* 
+Testing the mid-width 1px or 768px
+*//
+@media (min-width: 1px) and (max-width: 991.98px) {
   .wrapper .sidebar {
     z-index: 99;
   }
