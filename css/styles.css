@@ -616,24 +616,24 @@ progress {
 }
 
 
-.huey2 {
+.huey2:hover {
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
 }
 
-.huey2:hover {
+.huey2 {
   background-color: #008CBA;
   color: white;
 }
 
-.huey3 {
+.huey3:hover {
   background-color: white; 
   color: black; 
   border: 2px solid #f44336;
 }
 
-.huey3:hover {
+.huey3 {
   background-color: #f44336;
   color: white;
 }
@@ -7895,6 +7895,11 @@ textarea.form-control-lg {
 .bg-white {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-gray {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-gray-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-body {
