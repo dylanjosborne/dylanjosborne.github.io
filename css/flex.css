@@ -1,0 +1,26 @@
+.flex {
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.flex .box {
+	flex: 1;
+	text-align: center;
+}
+.box img {
+	width: 100%;
+}
+.box input[type=checkbox] {
+	width: 30px;
+	height: 30px;
+}
+
+@media screen and ( max-width: 480px ){
+	.flex {
+		flex-direction: column;
+	}
+	.flex .box img{
+		max-width: 100%;
+	}
+}
