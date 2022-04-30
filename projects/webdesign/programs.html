@@ -15,7 +15,8 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
-        <script src="scripts/tictactoe.js"></script>
+            <script src="scripts/tic-tac-toe.js"></script>
+    <script src="scripts/tic-tac-toe-comp.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +27,9 @@
 
         <!-- Customized Bootstrap Stylesheet -->
         <link href="../../css/style.css" rel="stylesheet">
+
+        <!-- Tic Tac Toe Stylesheet-->
+        <link href="css/tictactoe.css" rel="stylesheet">
 
     </head>
     <body>
@@ -115,15 +119,11 @@
                             </div>
 
                             <div class="nav-item dropdown">
-                                <a href="webdesign.html" class="nav-item nav-link active">Web Design</a>
-                                
-                                <!--
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Networks</a>
+                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Web Design</a>
                                 <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">All</a>
+                                    <a href="webdesign.html" class="dropdown-item">Web Design</a>
+                                    <a href="programs.html" class="dropdown-item active">Programs</a>
                                 </div>
-                                -->
-
                             </div>
 
                             <div class="nav-item dropdown">
@@ -151,60 +151,23 @@
                 <!-- Space Start -->
 
                 <div class="container bg-gray pt-5">
-                    <div class="row blog-item px-8 pb-5">
-        
-                                <FORM NAME="tic" method="post">
-
-                                <INPUT TYPE="button" NAME="square1" class="tictac" value="     " 
-                                onClick="if(document.tic.square1.value == '     ' && turn == 0 && mode == 1)
-                                {document.tic.square1.value = ' X '; square1T = 1; turn = 1; vari(); check();} else if(document.tic.square1.value == '     ' && turn == 1 && mode == 2)
-                                {document.tic.square1.value = ' X '; square1T = 1; turn = 0; vari(); player1Check()} else if(document.tic.square1.value == '     ' && turn == 0 && mode == 2) 
-                                {document.tic.square1.value = ' O '; square1T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-                                
-                                <INPUT TYPE="button" NAME="square2" class="tictac" value="     " onClick="if(document.tic.square2.value == '     ' && turn == 0 && mode == 1)
-                                {document.tic.square2.value = ' X '; square2T = 1; turn = 1; vari(); check();} else if(document.tic.square2.value == '     ' && turn == 1 && mode == 2)
-                                {document.tic.square2.value = ' X '; square2T = 1; turn = 0; vari(); player1Check()} else if(document.tic.square2.value == '     ' && turn == 0 && mode == 2)
-                                {document.tic.square2.value = ' O '; square2T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-                                
-                                <INPUT TYPE="button" NAME="square3" class="tictac" value="     " onClick="if(document.tic.square3.value == '     ' && turn == 0 && mode == 1)
-                                {document.tic.square3.value = ' X '; square3T = 1; turn = 1; vari(); check();} else if(document.tic.square3.value == '     ' && turn == 1 && mode == 2)
-                                {document.tic.square3.value = ' X '; square3T = 1; turn = 0; vari(); player1Check()} else if(document.tic.square3.value == '     ' && turn == 0 && mode == 2)
-                                {document.tic.square3.value = ' O '; square3T = 1; turn = 1; vari(); player1Check()} drawCheck()"><br />
-                                
-                                <INPUT TYPE="button" NAME="square4" class="tictac" value="     " onClick="if(document.tic.square4.value == '     ' && turn == 0 && mode == 1)
-                                {document.tic.square4.value = ' X '; square4T = 1; turn = 1; vari(); check();} else if(document.tic.square4.value == '     ' && turn == 1 && mode == 2)
-                                {document.tic.square4.value = ' X '; square4T = 1; turn = 0; vari(); player1Check()} else if(document.tic.square4.value == '     ' && turn == 0 && mode == 2)
-                                {document.tic.square4.value = ' O '; square4T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-                                
-                                <INPUT TYPE="button" NAME="square5" class="tictac" value="     " onClick="if(document.tic.square5.value == '     ' && turn == 0 && mode == 1)
-                                {document.tic.square5.value = ' X '; square5T = 1; turn = 1; vari(); check();} else if(document.tic.square5.value == '     ' && turn == 1 && mode == 2)
-                                {document.tic.square5.value = ' X '; square5T = 1; turn = 0; vari(); player1Check()} else if(document.tic.square5.value == '     ' && turn == 0 && mode == 2)
-                                {document.tic.square5.value = ' O '; square5T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-                                
-                                <INPUT TYPE="button" NAME="square6" class="tictac" value="     " onClick="if(document.tic.square6.value == '     ' && turn == 0 && mode == 1)
-                                {document.tic.square6.value = ' X '; square6T = 1; turn = 1; vari(); check();} else if(document.tic.square6.value == '     ' && turn == 1 && mode == 2)
-                                {document.tic.square6.value = ' X '; square6T = 1; turn = 0; vari(); player1Check()} else if(document.tic.square6.value == '     ' && turn == 0 && mode == 2) 
-                                {document.tic.square6.value = ' O '; square6T = 1; turn = 1; vari(); player1Check()} drawCheck()"><br />
-                                
-                                <INPUT TYPE="button" NAME="square7" class="tictac" value="     " onClick="if(document.tic.square7.value == '     ' && turn == 0 && mode == 1)
-                                {document.tic.square7.value = ' X '; square7T = 1; turn = 1; vari(); check();} else if(document.tic.square7.value == '     ' && turn == 1 && mode == 2)
-                                {document.tic.square7.value = ' X '; square7T = 1; turn = 0; vari(); player1Check()} else if(document.tic.square7.value == '     ' && turn == 0 && mode == 2)
-                                {document.tic.square7.value = ' O '; square7T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-                                
-                                <INPUT TYPE="button" NAME="square8" class="tictac" value="     " onClick="if(document.tic.square8.value == '     ' && turn == 0 && mode == 1)
-                                {document.tic.square8.value = ' X '; square8T = 1; turn = 1; vari(); check();} else if(document.tic.square8.value == '     ' && turn == 1 && mode == 2) 
-                                {document.tic.square8.value = ' X '; square8T = 1; turn = 0; vari(); player1Check()} else if(document.tic.square8.value == '     ' && turn == 0 && mode == 2) 
-                                {document.tic.square8.value = ' O '; square8T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-                                
-                                <INPUT TYPE="button" NAME="square9" class="tictac" value="     " onClick="if(document.tic.square9.value == '     ' && turn == 0 && mode == 1)
-                                {document.tic.square9.value = ' X '; square9T = 1; turn = 1; vari(); check();} else if(document.tic.square9.value == '     ' && turn == 1 && mode == 2)
-                                {document.tic.square9.value = ' X '; square9T = 1; turn = 0; vari(); player1Check()} else if(document.tic.square9.value == '     ' && turn == 0 && mode == 2) 
-                                {document.tic.square9.value = ' O '; square9T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-                                
-                                </form>
-                                        
-
+                    <div class="tictactoe">
+                        <h4>Tic-Tac-Toe (.js)</h4>
+                        <table class="tictactoe">
+                            <tr>
+                                <td class="top left"></td><td class="top center"></td><td class="top right"></td>
+                            </tr>
+                            <tr>
+                                <td class="middle left"></td><td class="middle center"></td><td class="middle right"></td>
+                            </tr>
+                            <tr>
+                                <td class="bottom left"></td><td class="bottom center"></td><td class="bottom right"></td>
+                            </tr>
+                        </table>
+                        <div class="announce"></div>
+                        <button class="tictactoe btn-secondary" onClick="restartGame()">Reset</button>
                     </div>
+
                 </div>
             
 

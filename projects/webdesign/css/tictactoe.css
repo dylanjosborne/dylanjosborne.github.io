@@ -1,0 +1,38 @@
+
+div.tictactoe{
+    text-align: center;
+}
+
+
+table.tictactoe {
+    margin: 0 auto;
+    font-size: 64px;
+    border-collapse: collapse;
+}
+
+
+div.announce {
+    font-size: 50px;
+}
+
+td {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+td.center, td.right {
+    border-left: 3px solid black;
+}
+
+td.middle, td.bottom {
+    border-top: 3px solid black;
+}
+
+button.tictactoe {
+    font-size:  24px;
+    margin: 20px auto;
+}
