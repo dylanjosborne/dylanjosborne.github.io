@@ -17,6 +17,7 @@
 
             <script src="scripts/tic-tac-toe.js"></script>
     <script src="scripts/tic-tac-toe-comp.js"></script>
+    <script src="scripts/calculator.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +31,8 @@
 
         <!-- Tic Tac Toe Stylesheet-->
         <link href="css/tictactoe.css" rel="stylesheet">
+
+        <link href="css/calculator.css" rel="stylesheet">
 
     </head>
     <body>
@@ -122,7 +125,7 @@
                                 <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Web Design</a>
                                 <div class="dropdown-menu">
                                     <a href="webdesign.html" class="dropdown-item">Web Design</a>
-                                    <a href="programs.html" class="dropdown-item active">Programs</a>
+                                    <a href="programs.html" class="dropdown-item active">Programming</a>
                                 </div>
                             </div>
 
@@ -143,7 +146,7 @@
             <!-- 2nd Navbar Start -->
                 <!-- Page Header Start -->
                     <div class="container bg-gray pt-2">
-                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 resume">Programs</h2>
+                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 resume">Programming</h2>
                         <!-- <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 resume">Client Support (All)</h2> -->
                     </div>
                 <!-- Page Header End -->
@@ -172,16 +175,80 @@
             
 
                 <div class="container bg-gray pt-5">
-                    <div class="row blog-item px-3 pb-5">
-                        <div class="col-md-5">
-
-                        </div>
-                        <div class="col-md-7 text-center">
+                    <div class="tictactoe">
+                        <h4>Calculator (.js)</h4>
+                        <! -- A working display where numbers go when their buttons are pushed (4 points) -- !>
+                        <! -- text display -- !>
+                        <input type="text" id="display" disabled="disabled">
+                                    
+                        <! -- Have number buttons 0 through 9 (2 points each = 20 total) -- !>
                             
-                        </div>
+                            <! -- First block of buttons on calculator -- !>
+                                <section>
+                                    <! -- buttons 7 - 9 & / sign -- !>
+                                    <input type="button" value="7" onclick="numberInput(7)">
+                                    
+                                    <input type="button" value="8" onclick="numberInput(8)">
+                                    
+                                    <input type="button" value="9" onclick="numberInput(9)">
+                                    
+                        <! -- Have buttons for addition, subtraction, multiplcation, and division (5 points each = 20 total)-- !>
                         
+                                    <input type="button" value="/" onclick="numberInput('/')"><br>
+                                </section>
+                                
+                            <! -- Second block of buttons on calculator -- !>
+                                <section>
+                                    <! -- buttons 4 - 6 & * sign -- !>
+                                    <input type="button" value="4" onclick="numberInput(4)">
+                                    
+                                    <input type="button" value="5" onclick="numberInput(5)">
+                                    
+                                    <input type="button" value="6" onclick="numberInput(6)">
+                                    
+                                    <input type="button" value="*" onclick="numberInput('*')">
+                                
+                                </section>
+                
+                            <! -- Third block of buttons on calculator -- !>
+                                <section>
+                            
+                                    <input type="button" value="1" onclick="numberInput(1)">
+                                    
+                                    <input type="button" value="2" onclick="numberInput(2)">
+                                    
+                                    <input type="button" value="3" onclick="numberInput(3)">
+                                    
+                                    <input type="button" value="-" onclick="numberInput('-')">
+                                
+                                </section>
+                            
+                            <! -- Fourth block of buttons on calculator -- !>
+                                <section>
+                                    
+                                    <input type="button" value="0" onclick="numberInput(0)">
+                                    
+                                    <input type="button" value="." onclick="numberInput('.')">
+                                    
+                                    <! -- An equal button to evaluate the math  (4 Points) -- !>
+                                    
+                                    <input type="button" value="=" onclick="numberInput('answer')">
+                                    
+                                    <input type="button" value="+" onclick="numberInput('+')">
+                                </section>
+                
+                                <section>
+                                
+                                <! -- A clear button to clear out the display (2 Points) -- !>
+                                
+                                <input type="button" value="Clear" onclick="clearDisplay()">			
+                
+                                </section>
+                
                     </div>
+
                 </div>
+                <br>
 
                 <!-- End of Space Start -->
 

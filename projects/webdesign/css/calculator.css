@@ -1,0 +1,17 @@
+/* Calculator Stylesheet */
+
+input[type=button]{
+	height: 70px;
+	font-size: 18pt;
+	width: 70px;
+	text-align: center;
+}
+
+input[type=text]{
+	height: 40px;
+	font-size: 18pt;
+	margin-bottom: 10px;
+}
+
+
+
